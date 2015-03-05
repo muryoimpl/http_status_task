@@ -1,5 +1,4 @@
-require "http_status_task/version"
-
 module HttpStatusTask
-  # Your code goes here...
+  VERSION = '0.0.1'
+  require 'http_status_task/engine' if defined?(Rails)
 end
