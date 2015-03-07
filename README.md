@@ -18,7 +18,8 @@ Or install it yourself as:
 
 ## Usage
 
-```ruby
+If you want to use in Rails project
+```
 $ bundle exec rake -T
 
 rake http:status      # Print HTTP status codes, descriptions and symbols
@@ -34,6 +35,30 @@ code description                     symbol
 100  Continue                        :continue
 101  Switching Protocols             :switching_protocols
 102  Processing                      :processing
+```
+
+If you want to use in command line
+
+```
+$ http_status
+code description                     symbol
+100  Continue                        :continue
+101  Switching Protocols             :switching_protocols
+102  Processing                      :processing
+...
+
+$ http_status 200
+code description                     symbol
+200  OK                              :ok
+201  Created                         :created
+202  Accepted                        :accepted
+203  Non-Authoritative Information   :non_authoritative_information
+204  No Content                      :no_content
+205  Reset Content                   :reset_content
+206  Partial Content                 :partial_content
+207  Multi-Status                    :multi_status
+208  Already Reported                :already_reported
+226  IM Used                         :im_used
 ```
 
 ## Contributing
