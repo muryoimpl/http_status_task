@@ -1,0 +1,17 @@
+#!/usr/bin/env ruby
+
+require 'rake'
+
+rake_task_path = File.expand_path('../../lib/tasks', __FILE__)
+Dir[rake_task_path + '/*.rake'].sort.each { |f| load f }
+
+begin
+  if ARGV.size == 0
+    Rake::Task['http:status'].execute
+  else
+    Rake::Task["http:status:#{ARGV[0]}"].execute
+  end
+rescue RuntimeError => e
+  puts e.message
+  exit!
+end
