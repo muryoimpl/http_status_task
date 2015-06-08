@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["muryoimpl@gmail.com"]
   spec.summary       = %q{This gem add rake tasks which print http status codes.}
   spec.description   = %q{This gem add rake tasks which print http status codes.}
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/muryoimpl/http_status_task"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
